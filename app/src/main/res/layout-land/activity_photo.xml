@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/photoactivityview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.knowyourgovernmentnew.PhotoActivity">
+
+        <TextView
+            android:id="@+id/locationphotoactitivity"
+            android:layout_width="400dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="4dp"
+            android:background="#702424"
+            android:gravity="center"
+            android:text="location"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/officialpostphotoactivity"
+            android:layout_width="363dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:text="official post"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationphotoactitivity" />
+
+        <TextView
+            android:id="@+id/officialnamephotoactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="32dp"
+            android:text="official name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialpostphotoactivity" />
+
+        <ImageView
+            android:id="@+id/officialimagephotoactivity"
+            android:layout_width="302dp"
+            android:layout_height="355dp"
+            android:layout_marginStart="412dp"
+            android:layout_marginLeft="412dp"
+            android:layout_marginTop="4dp"
+            android:fadingEdgeLength="10dp"
+            android:onClick="officialpartyclicked"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationphotoactitivity"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/partyphotologo"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="224dp"
+            android:layout_marginEnd="520dp"
+            android:layout_marginRight="520dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
